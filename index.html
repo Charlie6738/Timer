@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Timer</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+
+        <div class="field">
+            <label id="hours-label" for="hours">Hours</label>
+            <br/>
+            <input type="number" id="hours" value="0"/>
+        </div>
+
+        <div class="field">
+            <label id="minutes-label" for="minutes">Minutes</label>
+            <br/>
+            <input type="number" id="minutes" value="0"/>
+        </div>
+
+        <div class="field">
+            <label id="seconds-label" for="seconds">Seconds</label>
+            <br/>
+            <input type="number" id="seconds" value="0"/>
+        </div>
+
+        <br/>
+
+        <button type="button" id="startButton" onclick="start()">Start</button>
+        <button type="button" id="stopButton" onclick="stop()" disabled>Stop</button>
+        <button type="button" id="cancelButton" onclick="cancel()" disabled>Cancel</button>
+
+    </body>
+
+</html>
